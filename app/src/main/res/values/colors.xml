@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_item_text_color">#ffffffff</color>
+    <color name="item_text_color">#ff000000</color>
+
+
+    <!--应用内换肤资源-->
+    <color name="item_text_color_red">#ff0000</color>
+    <color name="menu_item_text_color_red">#ff0000</color>
+
+
+    <color name="item_text_color_green">#00ff00</color>
+    <color name="menu_item_text_color_green">#00ff00</color>
+
+</resources>

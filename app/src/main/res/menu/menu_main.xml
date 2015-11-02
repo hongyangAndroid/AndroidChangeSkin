@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item android:id="@+id/id_action_plugin_skinchange"
+          android:orderInCategory="100"
+          android:title="插件式换肤"
+          app:showAsAction="never"/>
+    <item
+        android:id="@+id/id_action_remove_any_skin"
+        android:orderInCategory="100"
+        android:title="恢复默认"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/id_action_notify_lv"
+        android:orderInCategory="100"
+        android:title="修改ListView的数据"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/id_action_dynamic"
+        android:orderInCategory="100"
+        android:title="测试动态增加View"
+        app:showAsAction="never"/>
+</menu>
