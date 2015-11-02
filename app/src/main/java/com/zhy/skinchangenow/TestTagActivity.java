@@ -14,13 +14,13 @@ public class TestTagActivity extends AppCompatActivity
 {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_tag);
+     protected void onCreate(Bundle savedInstanceState)
+{
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_test_tag);
 
-        SkinManager.getInstance().register(this);
-    }
+    SkinManager.getInstance().register(this);
+}
 
     public void addNewView(View view)
     {
