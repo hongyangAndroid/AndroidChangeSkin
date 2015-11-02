@@ -16,6 +16,10 @@
 
 <img src="changeskin_sc.gif" width="320px"/>
 
+## 运行
+
+Android Studio，import Project形式导入，将[skin_plugin.apk](skin_plugin.apk)，放置到模拟器或者真机的sdcard根目录，然后运行项目。
+
 ## 使用
 
 * Application
