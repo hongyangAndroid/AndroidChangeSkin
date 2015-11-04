@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity
     private ListView mListView;
     private String mSkinPkgPath = Environment.getExternalStorageDirectory() + File.separator + "skin_plugin.apk";
     private List<String> mDatas = new ArrayList<String>(Arrays.asList("Activity", "Service", "Activity", "Service",
+            "Activity", "Service", "Activity", "Service","Activity", "Service", "Activity", "Service",
+            "Activity", "Service", "Activity", "Service","Activity", "Service", "Activity", "Service",
+            "Activity", "Service", "Activity", "Service","Activity", "Service", "Activity", "Service",
+            "Activity", "Service", "Activity", "Service","Activity", "Service", "Activity", "Service",
+            "Activity", "Service", "Activity", "Service","Activity", "Service", "Activity", "Service",
             "Activity", "Service", "Activity", "Service"));
     private ArrayAdapter mAdapter ;
 
@@ -64,8 +69,9 @@ public class MainActivity extends AppCompatActivity
                 {
                     convertView = LayoutInflater.from(MainActivity.this).inflate(R.layout.item, parent
                             , false);
-                }
 
+                }
+                SkinManager.getInstance().injectSkin(convertView);
                 TextView tv = (TextView) convertView.findViewById(R.id.id_tv_title);
                 tv.setText(getItem(position));
                 return convertView;
