@@ -12,9 +12,28 @@
 * 无需重启Activity
 
 
+
+
 ## 效果图：
 
 <img src="changeskin_sc.gif" width="320px"/>
+
+## 引入
+
+下载changeskin，作为module依赖至主项目，例如：
+
+```xml
+dependencies {
+     compile project(':changeskin')
+}
+```
+或者直接添加依赖：
+
+```xml
+dependencies {
+    compile 'com.zhy:changeskin:4.0.1'
+}
+```
 
 ## 运行
 

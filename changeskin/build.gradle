@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "2.0.0"
+version = "4.0.1"
 
 android {
     compileSdkVersion 23
@@ -28,8 +28,8 @@ dependencies {
     compile 'com.android.support:support-v4:23.0.1'
 }
 
-def siteUrl = 'https://github.com/hongyangAndroid/ChangeSkin'                        // #CONFIG# // project homepage
-def gitUrl = 'https://github.com/hongyangAndroid/ChangeSkin.git'                     // #CONFIG# // project git
+def siteUrl = 'https://github.com/hongyangAndroid/AndroidChangeSkin'                        // #CONFIG# // project homepage
+def gitUrl = 'https://github.com/hongyangAndroid/AndroidChangeSkin.git'                     // #CONFIG# // project git
 group = "com.zhy"
 
 install {
