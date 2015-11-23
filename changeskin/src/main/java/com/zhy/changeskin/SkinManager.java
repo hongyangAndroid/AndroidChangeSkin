@@ -2,6 +2,8 @@ package com.zhy.changeskin;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.os.AsyncTask;
@@ -68,6 +70,9 @@ public class SkinManager
         File file = new File(skinPluginPath);
         if (!file.exists()) return;
 
+        PackageInfo info = getPackageInfo(skinPluginPath);
+        if (!info.packageName.equals(skinPluginPkg)) return;
+
         try
         {
             loadPlugin(skinPluginPath, skinPluginPkg, mSuffix);
@@ -78,6 +83,11 @@ public class SkinManager
             mPrefUtils.clear();
             e.printStackTrace();
         }
+    }
+
+    private PackageInfo getPackageInfo(String skinPluginPath) {
+        PackageManager pm = mContext.getPackageManager();
+        return pm.getPackageArchiveInfo(skinPluginPath, PackageManager.GET_ACTIVITIES);
     }
 
 
@@ -201,6 +211,14 @@ public class SkinManager
             {
                 try
                 {
+                    File file = new File(skinPluginPath);
+                    if (!file.exists())
+                        return 0;
+
+                    PackageInfo info = getPackageInfo(skinPluginPath);
+                    if (!info.packageName.equals(skinPluginPkg))
+                        return 0;
+
                     loadPlugin(skinPluginPath, skinPluginPkg, suffix);
                     return 1;
                 } catch (Exception e)

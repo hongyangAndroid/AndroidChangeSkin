@@ -29,9 +29,9 @@ public enum SkinAttrType
             @Override
             public void apply(View view, String resName)
             {
-                ColorStateList colorlist = getResourceManager().getColorStateList(resName);
-                if (colorlist == null) return;
-                ((TextView) view).setTextColor(colorlist);
+                ColorStateList colorList = getResourceManager().getColorStateList(resName);
+                if (colorList == null) return;
+                ((TextView) view).setTextColor(colorList);
             }
         }, SRC("src")
         {
