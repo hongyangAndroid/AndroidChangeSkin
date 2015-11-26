@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity
                     @Override
                     public void onError(Exception e)
                     {
-                        Toast.makeText(MainActivity.this, "换肤失败", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "换肤失败:" + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
