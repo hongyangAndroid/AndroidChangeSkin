@@ -67,12 +67,6 @@ public class SkinManager
         if (!validPluginParams(skinPluginPath, skinPluginPkg))
             return;
 
-        File file = new File(skinPluginPath);
-        if (!file.exists()) return;
-
-        PackageInfo info = getPackageInfo(skinPluginPath);
-        if (!info.packageName.equals(skinPluginPkg)) return;
-
         try
         {
             loadPlugin(skinPluginPath, skinPluginPkg, mSuffix);
@@ -109,6 +103,14 @@ public class SkinManager
         {
             return false;
         }
+
+        File file = new File(skinPath);
+        if (!file.exists())
+            return false;
+
+        PackageInfo info = getPackageInfo(skinPath);
+        if (!info.packageName.equals(skinPkgName))
+            return false;
         return true;
     }
 
@@ -116,7 +118,7 @@ public class SkinManager
     {
         if (!validPluginParams(skinPath, skinPkgName))
         {
-            throw new IllegalArgumentException("skinPluginPath or skinPkgName can not be empty ! ");
+            throw new IllegalArgumentException("skinPluginPath or skinPkgName not valid ! ");
         }
     }
 
@@ -202,7 +204,12 @@ public class SkinManager
 
         skinChangingCallback.onStart();
 
-        checkPluginParamsThrow(skinPluginPath, skinPluginPkg);
+        try {
+            checkPluginParamsThrow(skinPluginPath, skinPluginPkg);
+        } catch (IllegalArgumentException e) {
+            skinChangingCallback.onError(new RuntimeException("checkPlugin occur error"));
+            return;
+        }
 
         new AsyncTask<Void, Void, Integer>()
         {
@@ -211,14 +218,6 @@ public class SkinManager
             {
                 try
                 {
-                    File file = new File(skinPluginPath);
-                    if (!file.exists())
-                        return 0;
-
-                    PackageInfo info = getPackageInfo(skinPluginPath);
-                    if (!info.packageName.equals(skinPluginPkg))
-                        return 0;
-
                     loadPlugin(skinPluginPath, skinPluginPkg, suffix);
                     return 1;
                 } catch (Exception e)
