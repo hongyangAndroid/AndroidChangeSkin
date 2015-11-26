@@ -17,7 +17,7 @@ import java.util.List;
 public class SkinAttrSupport
 {
 
-    private static SkinAttrType getSupprotAttrType(String attrName)
+    private static SkinAttrType getSupportAttrType(String attrName)
     {
         for (SkinAttrType attrType : SkinAttrType.values())
         {
@@ -107,7 +107,7 @@ public class SkinAttrSupport
             String resName = resItems[1];
             String resType = resItems[2];
 
-            SkinAttrType attrType = getSupprotAttrType(resType);
+            SkinAttrType attrType = getSupportAttrType(resType);
             if (attrType == null) continue;
             SkinAttr attr = new SkinAttr(attrType, resName);
             skinAttrs.add(attr);

@@ -2,6 +2,8 @@ package com.zhy.changeskin;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.os.AsyncTask;
@@ -65,9 +67,6 @@ public class SkinManager
         if (!validPluginParams(skinPluginPath, skinPluginPkg))
             return;
 
-        File file = new File(skinPluginPath);
-        if (!file.exists()) return;
-
         try
         {
             loadPlugin(skinPluginPath, skinPluginPkg, mSuffix);
@@ -78,6 +77,11 @@ public class SkinManager
             mPrefUtils.clear();
             e.printStackTrace();
         }
+    }
+
+    private PackageInfo getPackageInfo(String skinPluginPath) {
+        PackageManager pm = mContext.getPackageManager();
+        return pm.getPackageArchiveInfo(skinPluginPath, PackageManager.GET_ACTIVITIES);
     }
 
 
@@ -99,6 +103,14 @@ public class SkinManager
         {
             return false;
         }
+
+        File file = new File(skinPath);
+        if (!file.exists())
+            return false;
+
+        PackageInfo info = getPackageInfo(skinPath);
+        if (!info.packageName.equals(skinPkgName))
+            return false;
         return true;
     }
 
@@ -106,7 +118,7 @@ public class SkinManager
     {
         if (!validPluginParams(skinPath, skinPkgName))
         {
-            throw new IllegalArgumentException("skinPluginPath or skinPkgName can not be empty ! ");
+            throw new IllegalArgumentException("skinPluginPath or skinPkgName not valid ! ");
         }
     }
 
@@ -192,7 +204,12 @@ public class SkinManager
 
         skinChangingCallback.onStart();
 
-        checkPluginParamsThrow(skinPluginPath, skinPluginPkg);
+        try {
+            checkPluginParamsThrow(skinPluginPath, skinPluginPkg);
+        } catch (IllegalArgumentException e) {
+            skinChangingCallback.onError(new RuntimeException("checkPlugin occur error"));
+            return;
+        }
 
         new AsyncTask<Void, Void, Integer>()
         {
