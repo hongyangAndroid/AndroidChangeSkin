@@ -2,6 +2,34 @@
 <items version="2" >
 
     <item
+        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-f92a2a95d0984ccbe67db18fbe2f2122f48ff117.jar" />
+    </item>
+    <item
+        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-6d88259e2680a23c0054bbf885e80b902334ae30.jar" />
+    </item>
+    <item
+        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/classes-f137630e7c9c00efa062133d129aca4a3fbda1f6.jar" />
+    </item>
+    <item
+        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.zhy/changeskin/4.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="34c647f250a8c01893e46e1885d83448755e5bf9">
+        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/classes-dc5b2af2b12edfc29b3123d72880197e8293d8b4.jar" />
+    </item>
+    <item
         jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -14,34 +42,6 @@
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
         <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-9c3c1d6469a292a1d638b0b6e106833f73f748f5.jar" />
-    </item>
-    <item
-        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/classes-f137630e7c9c00efa062133d129aca4a3fbda1f6.jar" />
-    </item>
-    <item
-        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/libs/nineoldandroids-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
-        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-f92a2a95d0984ccbe67db18fbe2f2122f48ff117.jar" />
-    </item>
-    <item
-        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.zhy/changeskin/4.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="33899fdb683c6d428864977d36088f1486b01b8d">
-        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/classes-7f6bfe999a7d67030f8fcc3ae0d3d180179db8fa.jar" />
-    </item>
-    <item
-        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-6d88259e2680a23c0054bbf885e80b902334ae30.jar" />
     </item>
 
 </items>
