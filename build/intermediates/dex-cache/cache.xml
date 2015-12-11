@@ -16,13 +16,6 @@
         <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-9c3c1d6469a292a1d638b0b6e106833f73f748f5.jar" />
     </item>
     <item
-        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-6d88259e2680a23c0054bbf885e80b902334ae30.jar" />
-    </item>
-    <item
         jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -37,11 +30,18 @@
         <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-f92a2a95d0984ccbe67db18fbe2f2122f48ff117.jar" />
     </item>
     <item
-        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.zhy/changeskin/2.0.0/jars/classes.jar"
+        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.zhy/changeskin/4.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="8dffa99ab4f06124a311c4f8962ef1d5ec749296">
-        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/classes-186df5a97ef65d6faecf33f01dbf2f7eed67b5f8.jar" />
+        sha1="33899fdb683c6d428864977d36088f1486b01b8d">
+        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/classes-7f6bfe999a7d67030f8fcc3ae0d3d180179db8fa.jar" />
+    </item>
+    <item
+        jar="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/zhy/github_repository/mine/skin/ChangeSkin/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-6d88259e2680a23c0054bbf885e80b902334ae30.jar" />
     </item>
 
 </items>

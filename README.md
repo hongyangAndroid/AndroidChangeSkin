@@ -31,7 +31,7 @@ dependencies {
 
 ```xml
 dependencies {
-    compile 'com.zhy:changeskin:4.0.1'
+    compile 'com.zhy:changeskin:4.0.2'
 }
 ```
 
@@ -102,6 +102,9 @@ tag属性分为3部分组成：
  * 支持的属性，目前支持src,background,textColor,支持扩展。
 
 3部分，必须以:分隔拼接。
+
+对于一个View多个属性需要换肤的，`android:tag="skin:item_text_color:textColor|skin:icon:src"`
+同样使用|进行分隔。
 
 简言之：如果你哪个View需要换肤，就添加tag属性，tag值按照上述方式设置即可。
 
