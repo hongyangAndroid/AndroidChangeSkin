@@ -26,9 +26,12 @@ public enum SkinAttrType
                         view.setBackgroundDrawable(drawable);
                     } else
                     {
-                        int color = getResourceManager().getColor(resName);
-                        if (color == -1) return;
-                        view.setBackgroundColor(color);
+			try{
+                            int color = getResourceManager().getColor(resName);
+                            view.setBackgroundColor(color);
+			} catch (Resources.NotFoundException ex) {
+                    	    ex.printStackTrace();
+                	}
                     }
                 }
             }, COLOR("textColor")
@@ -52,6 +55,16 @@ public enum SkinAttrType
                     ((ImageView) view).setImageDrawable(drawable);
                 }
 
+            }
+        }, DIVIDER("divider") 
+	{
+            @Override
+            public void apply(View view, String resName) {
+                if (view instanceof ListView) {
+                    Drawable divider = getResourceManager().getDrawableByName(resName);
+                    if (divider == null) return;
+                    ((ListView) view).setDivider(divider);
+                }
             }
         };
 
