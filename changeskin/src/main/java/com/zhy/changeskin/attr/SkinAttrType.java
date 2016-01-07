@@ -1,9 +1,11 @@
 package com.zhy.changeskin.attr;
 
 import android.content.res.ColorStateList;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.zhy.changeskin.ResourceManager;
