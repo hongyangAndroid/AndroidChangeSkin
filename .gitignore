@@ -1,3 +1,9 @@
+/SkinChangeNow.iml
+/ChangeSkin.iml
+/AndroidChangeSkin.iml
+/changeskin/changeskin.iml
+/app/app.iml
+/.idea
 # Built application files
 *.apk
 *.ap_
@@ -10,6 +16,7 @@
 
 # Generated files
 bin/
+/.gradle
 gen/
 
 # Gradle files

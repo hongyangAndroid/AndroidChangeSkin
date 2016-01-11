@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ChangeSkin.iml" filepath="$PROJECT_DIR$/ChangeSkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidChangeSkin.iml" filepath="$PROJECT_DIR$/AndroidChangeSkin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/changeskin/changeskin.iml" filepath="$PROJECT_DIR$/changeskin/changeskin.iml" />
     </modules>
