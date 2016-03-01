@@ -31,7 +31,7 @@ dependencies {
 
 ```xml
 dependencies {
-    compile 'com.zhy:changeskin:4.0.2'
+    compile 'com.zhy:changeskin:4.0.3'
 }
 ```
 
