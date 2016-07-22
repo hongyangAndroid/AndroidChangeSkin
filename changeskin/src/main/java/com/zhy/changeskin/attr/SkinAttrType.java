@@ -1,9 +1,11 @@
 package com.zhy.changeskin.attr;
 
 import android.content.res.ColorStateList;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.zhy.changeskin.ResourceManager;
@@ -20,15 +22,21 @@ public enum SkinAttrType
                 @Override
                 public void apply(View view, String resName)
                 {
+                    int paddingLeft = view.getPaddingLeft();
+                    int paddingTop = view.getPaddingLeft();
+                    int paddingRight = view.getPaddingLeft();
+                    int paddingBottom = view.getPaddingLeft();
                     Drawable drawable = getResourceManager().getDrawableByName(resName);
                     if (drawable != null)
                     {
                         view.setBackgroundDrawable(drawable);
+                        view.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
                     } else
                     {
 			try{
                             int color = getResourceManager().getColor(resName);
                             view.setBackgroundColor(color);
+                            view.setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom);
 			} catch (Resources.NotFoundException ex) {
                     	    ex.printStackTrace();
                 	}
